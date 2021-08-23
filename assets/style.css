@@ -146,7 +146,7 @@ section .container {
 .banner {
   height: 28.4375rem;
   position: relative;
-  background: url(/assets/img/header.JPG);
+  background: url (assets/img/header.JPG);
   background-repeat: no-repeat;
   background-size: 100%;
   top: -9rem;
