@@ -1,21 +1,279 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/bootstrap-5.1.0-dist/bootstrap/css/bootstrap.min.css">
-  <title>Leprechauns UFABC Rugby</title>
-</head>
-<body>
-  <header>
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.1.0-dist/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <title>Leprechauns UFABC Rugby</title>
+    <!--Created by Caroline Terra (@carolteerra)-->
+  </head>
+  <body>
+    <header>
+      <div class="black-container">
+        <ul>
+          <li><a href="#">CBRu</a></li>
+          <li><a href="#">FPR</a></li>
+          <li><a href="#">NDU</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row">
+          <nav>
+            <ul>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#teams">Equipes</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="logo">
+        <img id="logotipo" src="/assets/img/logo.JPG" alt="logotipo" />
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="banner-text">
+        <h1 id="page-title">Leprechauns</h1>
+        <h3 id="page-subtitle">UFABC Rugby</h3>
+      </div>
+    </section>
+
+    <div id="about" class="container">
+      <h2 class="section-title">Sobre nós</h2>
+      <h6 class="section-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magnam
+        quisquam amet velit impedit fuga mollitia sit sequi, nihil illo dolor
+        rem similique beatae explicabo deleniti repellat tempora, facilis
+        eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusantium excepturi at repudiandae possimus tempore accusamus
+        inventore, maiores cum dicta numquam libero aliquam deleniti blanditiis
+        ut sit, temporibus, eligendi ipsam? Culpa! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Libero aliquam reiciendis odit pariatur
+        fugit, veritatis blanditiis? Unde facilis repudiandae quas esse
+        accusamus dolorem, corrupti, quos nisi sapiente quia, explicabo soluta.
+      </h6>
+    </div>
+
+    <div id="statistics" class="grid">
       <div class="row">
-        
+        <div class="row">
+          <div class="col">
+            <h3 class="stats-title">Partidas</h3>
+            <br />
+            <h6 class="stats-text">
+              Feminino: 1468
+              <br />
+              Masculino: 456
+            </h6>
+          </div>
+          <div class="col">
+            <h3 class="stats-title">Vitórias</h3>
+            <br />
+            <h6 class="stats-text">
+              Feminino: 847
+              <br />
+              Masculino: 221
+            </h6>
+          </div>
+          <div class="col">
+            <h3 class="stats-title">Empates</h3>
+            <br />
+            <h6 class="stats-text">
+              Feminino: 110
+              <br />
+              Masculino: 87
+            </h6>
+          </div>
+          <div class="col">
+            <h3 class="stats-title">Derrotas</h3>
+            <br />
+            <h6 class="stats-text">
+              Feminino: 327
+              <br />
+              Masculino: 101
+            </h6>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
-  
-  <script src="bootstrap-5.1.0-dist/bootstrap/js/bootstrap.min.js"></script>
-</body>
+    <section id="equipes">
+      <div id="teams" class="container">
+        <div>
+          <h2 class="section-title">Equipes</h2>
+        </div>
+      </div>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade container"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://scontent.fcgh3-1.fna.fbcdn.net/v/t1.6435-9/171053100_5477523285622846_9034511245712491325_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeHENasSxjYZw9AlwbXZZzhEGX5h1jSczzAZfmHWNJzPMMJS1NkDCF0bxfMcM3lqR-Yv4j8VJeBX6ox7yA1oocsx&_nc_ohc=IaawxG8UD2gAX92AaPE&tn=7gKSvy9TyxXCnF4w&_nc_ht=scontent.fcgh3-1.fna&oh=b62147f2dfec939dd3afc07d5e827e41&oe=6145BC53"
+              class="d-block w-100"
+              alt="times masc e fem de 2015"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://scontent.fcgh3-1.fna.fbcdn.net/v/t1.6435-9/170977962_5477523278956180_6653788170964158645_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeGvISH43k-rIPhrJGEcaolEoQC90krHEKuhAL3SSscQq8DAEyIzILTyf0t2qNsY-1CAWddJqPkSB4INzwt1S0GZ&_nc_ohc=ucaQrl5Rn50AX_C9_di&_nc_ht=scontent.fcgh3-1.fna&oh=13bd419e44b076e9537e3c5fdd45abfc&oe=614745C6"
+              class="d-block w-100"
+              alt="times masc e fem de 2016"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://scontent.fcgh3-1.fna.fbcdn.net/v/t1.6435-9/170751813_5477523282289513_1309796540230575384_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeFb9TCtEbC64pDhMXUEL1dO-okVJ7506pr6iRUnvnTqmuwPxw41U_jvWs9xcR1egFNzBvTBRQFS13kbS96kXdzv&_nc_ohc=DuBMnsRdim8AX8WvoYe&tn=7gKSvy9TyxXCnF4w&_nc_ht=scontent.fcgh3-1.fna&oh=7d030fcc29e6fca676491e492cc5181f&oe=6144329E"
+              class="d-block w-100"
+              alt="times masc e fem de 2017"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://scontent.fcgh3-1.fna.fbcdn.net/v/t1.6435-9/171431598_5477523292289512_6733896040927494316_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeG0bwC6IYtwz7c2sDV3quxMsTIr0rUZCbWxMivStRkJtWAPu4xGSrarM3YRM0BdyumjLt295hk_Aqmkdr83X_YL&_nc_ohc=yYg4ivgRNZwAX9V7k14&_nc_ht=scontent.fcgh3-1.fna&oh=b35f1bc679f42e4c1541139e7ff80141&oe=61452E76"
+              class="d-block w-100"
+              alt="times masc e fem de 2018"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://scontent.fcgh3-1.fna.fbcdn.net/v/t1.6435-9/171093301_5477523288956179_1105981627965875299_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeG2lAYyduvwzqjzvighFtzv-JS_hW23MBv4lL-FbbcwGz77JIPiUflROJTXI-tpCo3cuFrfa5Us7oKhISLt5rqH&_nc_ohc=EBCEDJnsLoEAX9aALJh&_nc_ht=scontent.fcgh3-1.fna&oh=f4844f144086b882c99c46ab4cea3b0f&oe=6144D213"
+              class="d-block w-100"
+              alt="times masc e fem de 2019"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://scontent.fcgh3-1.fna.fbcdn.net/v/t1.6435-9/170948821_5477523302289511_5056040167441257444_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeG0UGVCMTFelrCDIYgW4HW9eJ8OvF0rBeJ4nw68XSsF4plkZOYeaGR4HBBwZZTDHJXFg5xqlKSs4vIYILNQbPYv&_nc_ohc=gofuwmiRtTwAX_u2jjt&_nc_ht=scontent.fcgh3-1.fna&oh=794ca141ef67f00575349b2b16d5d1a9&oe=614715D7"
+              class="d-block w-100"
+              alt="times masc e fem de 2020"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+        <hr />
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2 class="section-title">Contato</h2>
+    </section>
+    <div class="container overflow-hidden">
+      <div class="row gx-5">
+        <div class="col-sm-6 col-md-8">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d996.4606525519451!2d-46.53591958711897!3d-23.638944712171536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1629585296117!5m2!1sen!2sbr"
+            width="100%"
+            height="350"
+            allowfullscreen=""
+            loading="lazy"
+            
+          ></iframe>
+        </div>
+        <div class="col-6 col-md-4">
+          <h6 class="contact-highlight">
+            <span><i class="bi bi-pin-map-fill"></i></span> Endereço:
+          </h6>
+          <span
+            ><h6 class="contact-text">
+              Av. dos Estados, 2700 - Parque Central, Santo André - SP,
+              09270-270 - Ao lado da Estação Prefeito Saladino da CPTM
+            </h6>
+          </span>
+          <br />
+          <h6 class="contact-highlight">
+            <span><i class="bi bi-clock-fill"></i></span> Horários:
+          </h6>
+          <span
+            ><h6 class="contact-text">Treinos temporariamente suspensos.</h6>
+          </span>
+          <br />
+          <a
+            class="btn btn-warning"
+            href="https://www.facebook.com/LeprechaunsRugby"
+            role="button"
+            ><i class="bi bi-facebook"></i></a
+          ><br />
+          <a
+            class="btn btn-warning"
+            href="https://www.instagram.com/leprechaunsrugby/"
+            role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="footer-grid">
+        <div class="row">
+          <div class="col-sm-3">
+            <img id=logo-2 src="/assets/img/logo.JPG">
+          </div>
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-8 col-sm-6">
+                <h5>Produtos</h5>
+                <br>
+                <a class="external-link" href="#">Em breve</a>
+              </div>
+              <div class="col-4 col-sm-6">
+                <h5>Filiação</h5>
+                <br>
+                <a class="external-link" href="#">Mensalidade</a><br>
+                <a class="external-link" href="#">Benefícios</a><br>
+                <a class="external-link" href="#">Pacotes</a><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="black-footer">
+        <div class="row">
+          <div class="col-md-auto">
+            <p>Leprechauns UFABC Rugby 2021</p>
+          </div>
+          <div class="col-md-auto">
+            <p>Made by Caroline Terra with HCODE Udemy</p>
+          </div>
+      </div>
+    </footer>
+
+    <script src="bootstrap-5.1.0-dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/main.js"></script>
+  </body>
 </html>

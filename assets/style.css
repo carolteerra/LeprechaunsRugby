@@ -1,0 +1,373 @@
+/***VARIABLES***/
+:root {
+  --background-color: hsl(152, 98%, 20%);
+  --header-background-color: hsla(152, 98%, 20%, 0.582);
+  --text-color: hsl(0, 30%, 95%);
+  --link-color: hsl(49, 90%, 51%);
+  --text-color-2: hsl(240, 2%, 9%);
+  --body-font: (font-family: 'Roboto', sans-serif);
+}
+
+/**RESET**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: small;
+}
+
+body {
+  background-color: #000;
+}
+
+/**HEADER**/
+header {
+  width: 100%;
+  height: 11rem;
+  background: var(--header-background-color);
+  position: relative;
+  z-index: 2;
+}
+
+header .black-container {
+  background-color: black;
+  height: 2rem;
+  font-weight: bold;
+  padding-left: 5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.125rem;
+  width: 100%;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin: 0;
+}
+
+header .black-container ul {
+  align-items: center;
+  max-height: 2rem;
+}
+
+header .black-container ul li a {
+  color: var(--link-color);
+  padding-inline-start: 2rem;
+  font-size: 0.85rem;
+}
+
+header ul li a:hover {
+  color: wheat;
+}
+
+header #logotipo {
+  position: absolute;
+  left: 1rem;
+  top: 1.25rem;
+  max-width: 10.5rem;
+}
+
+#logotipo {
+  clip-path: circle(80px at center);
+}
+
+header nav {
+  position: relative;
+  top: 3rem;
+}
+
+header .container nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .container nav ul li {
+  padding-inline-start: 3.5rem;
+}
+
+header .container nav ul li a {
+  color: var(--link-color);
+  font-weight: bolder;
+  font-size: 1.25rem;
+  transition: color 0.3s;
+  position: relative;
+}
+
+header .container nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 1.5px;
+  background-color: var(--link-color);
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  transition: width 0.2s;
+}
+
+header nav ul li a:hover::after,
+header nav ul li a.active::after {
+  width: 100%;
+}
+
+/***Banner***/
+
+#page-title {
+  font-size: 3.25rem;
+}
+
+section .container {
+  position: relative;
+  max-width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 22rem;
+}
+
+.banner {
+  height: 28.4375rem;
+  position: relative;
+  background: url(/assets/img/header.JPG);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: -9rem;
+  bottom: 0;
+}
+
+.banner-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  vertical-align: middle;
+  top: 12rem;
+  left: 1rem;
+  max-width: 50%;
+  color: var(--link-color);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
+}
+
+.section-title {
+  color: var(--link-color);
+  line-height: 2rem;
+  padding-bottom: 10%;
+  padding-top: 5rem;
+  font-size: xx-large;
+  text-shadow: 3px 3px 3px rgba(55, 255, 103, 0.45);
+}
+
+.section-text {
+  color: #fff;
+  font-weight: normal;
+  text-align: justify;
+  line-height: 1.625rem;
+  margin-bottom: 10%;
+}
+
+/***SOBRE NÓS***/
+
+#about {
+  position: relative;
+  max-width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -9rem;
+}
+
+/**Estatísticas**/
+
+#statistics {
+  background-color: var(--background-color);
+  width: 100%;
+  position: relative;
+  top: -9rem;
+}
+
+#statistics .col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+
+h3.stats-title {
+  position: relative;
+  align-self: center;
+  text-align: center;
+  flex-wrap: wrap;
+  color: var(--link-color);
+  margin: 0;
+  padding: 2rem 2rem 0rem;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
+}
+
+h6.stats-text {
+  position: relative;
+  align-self: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0;
+  padding-bottom: 2rem;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
+}
+
+/**EQUIPES**/
+
+#equipes {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: center;
+  position: relative;
+  top: -9rem;
+}
+
+#teams {
+  top: 0;
+}
+
+#carouselExampleFade {
+  top: 0;
+}
+
+.carousel-inner {
+  padding-top: 2rem;
+  top: 0;
+  justify-content: middle;
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  max-height: 450px;
+  align-self: flex-start;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  margin-top: 2rem;
+  max-height: 450px;
+}
+
+hr {
+  font-weight: 700;
+  height: 4px;
+  width: 500px;
+  color: yellow;
+}
+
+/***CONTATO***/
+#contact {
+  position: relative;
+  max-width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -9rem;
+}
+
+iframe {
+  border-color: hsl(49, 90%, 51%);
+  border-style: solid;
+  border-radius: 5px;
+  border-width: medium;
+}
+
+.col-sm-6.col-md-8 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-6.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  line-height: 1.625rem;
+}
+
+h6.contact-highlight {
+  color: var(--link-color);
+}
+
+h6.contact-text {
+  color: rgb(255, 255, 255);
+}
+
+.container.overflow-hidden {
+  margin-bottom: 2rem;
+  position: relative;
+  top: -9rem;
+}
+
+/***FOOTER***/
+footer {
+  margin: 0;
+  height: auto;
+  top: 9rem;
+}
+
+#footer-grid {
+  background-color: var(--background-color);
+  height: 11rem;
+  padding-left: 1rem;
+}
+
+footer #logo-2 {
+  left: 0;
+  max-width: 11rem;
+}
+
+#logo-2 {
+  clip-path: circle(85px at center);
+}
+
+.col-8.col-sm-6,
+.col-4.col-sm-6 {
+  padding-top: 1rem;
+}
+
+.col-8.col-sm-6 a,
+.col-4.col-sm-6 a {
+  color: var(--link-color);
+  line-height: 1.75rem;
+}
+
+.col-8.col-sm-6 h5,
+.col-4.col-sm-6 h5 {
+  color: hsl(49, 90%, 51%);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
+}
+
+#black-footer {
+  background-color: #000;
+  height: 2rem;
+  color: hsl(152, 98%, 20%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
